@@ -11,7 +11,7 @@ import SwiftUI
 struct Week5_testApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Midnightstars()
         }
     }
 }
