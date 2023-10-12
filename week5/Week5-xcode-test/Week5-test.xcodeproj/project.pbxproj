@@ -13,6 +13,9 @@
 		7A4262142AD8544600D0BB5C /* harvestseason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4262112AD8544600D0BB5C /* harvestseason.swift */; };
 		7A4262152AD8544600D0BB5C /* Skyview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4262122AD8544600D0BB5C /* Skyview.swift */; };
 		7A4262162AD8544600D0BB5C /* Midnightstars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4262132AD8544600D0BB5C /* Midnightstars.swift */; };
+		7ADE9AD82AD8556500F4FC05 /* Sunday.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE9AD52AD8556500F4FC05 /* Sunday.wav */; };
+		7ADE9AD92AD8556500F4FC05 /* skyview.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE9AD62AD8556500F4FC05 /* skyview.wav */; };
+		7ADE9ADA2AD8556500F4FC05 /* harvest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7ADE9AD72AD8556500F4FC05 /* harvest.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		7A4262112AD8544600D0BB5C /* harvestseason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = harvestseason.swift; sourceTree = "<group>"; };
 		7A4262122AD8544600D0BB5C /* Skyview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skyview.swift; sourceTree = "<group>"; };
 		7A4262132AD8544600D0BB5C /* Midnightstars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Midnightstars.swift; sourceTree = "<group>"; };
+		7ADE9AD52AD8556500F4FC05 /* Sunday.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sunday.wav; sourceTree = "<group>"; };
+		7ADE9AD62AD8556500F4FC05 /* skyview.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skyview.wav; sourceTree = "<group>"; };
+		7ADE9AD72AD8556500F4FC05 /* harvest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = harvest.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 		7A4262022AD852BB00D0BB5C /* Week5-test */ = {
 			isa = PBXGroup;
 			children = (
+				7ADE9AD72AD8556500F4FC05 /* harvest.mp3 */,
+				7ADE9AD62AD8556500F4FC05 /* skyview.wav */,
+				7ADE9AD52AD8556500F4FC05 /* Sunday.wav */,
 				7A4262032AD852BB00D0BB5C /* Week5_testApp.swift */,
 				7A4262112AD8544600D0BB5C /* harvestseason.swift */,
 				7A4262132AD8544600D0BB5C /* Midnightstars.swift */,
@@ -131,8 +140,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADE9ADA2AD8556500F4FC05 /* harvest.mp3 in Resources */,
 				7A42620B2AD852BC00D0BB5C /* Preview Assets.xcassets in Resources */,
+				7ADE9AD92AD8556500F4FC05 /* skyview.wav in Resources */,
 				7A4262082AD852BC00D0BB5C /* Assets.xcassets in Resources */,
+				7ADE9AD82AD8556500F4FC05 /* Sunday.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
