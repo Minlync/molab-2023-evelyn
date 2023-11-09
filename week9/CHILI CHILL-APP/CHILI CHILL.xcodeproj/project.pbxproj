@@ -17,7 +17,7 @@
 		7A8DE4152AEA0B5300AE2DC0 /* listview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DE4142AEA0B5300AE2DC0 /* listview.swift */; };
 		7A8DE4172AEA0B6800AE2DC0 /* foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DE4162AEA0B6800AE2DC0 /* foods.swift */; };
 		7A90D4F72ACF3ABC001F3CFF /* burgerdetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A90D4F62ACF3ABC001F3CFF /* burgerdetails.swift */; };
-		7A90D5332ACF8E6C001F3CFF /* loginhomepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A90D5322ACF8E6C001F3CFF /* loginhomepage.swift */; };
+		7A90D5332ACF8E6C001F3CFF /* loginpage-start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A90D5322ACF8E6C001F3CFF /* loginpage-start.swift */; };
 		7A9120352AF3F82F00B11E9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A9120342AF3F82F00B11E9A /* GoogleService-Info.plist */; };
 		7A96F9732AC8E033007B3BD8 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A96F9722AC8E033007B3BD8 /* Random.swift */; };
 /* End PBXBuildFile section */
@@ -54,7 +54,7 @@
 		7A8DE4142AEA0B5300AE2DC0 /* listview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listview.swift; sourceTree = "<group>"; };
 		7A8DE4162AEA0B6800AE2DC0 /* foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foods.swift; sourceTree = "<group>"; };
 		7A90D4F62ACF3ABC001F3CFF /* burgerdetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = burgerdetails.swift; sourceTree = "<group>"; };
-		7A90D5322ACF8E6C001F3CFF /* loginhomepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginhomepage.swift; sourceTree = "<group>"; };
+		7A90D5322ACF8E6C001F3CFF /* loginpage-start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "loginpage-start.swift"; sourceTree = "<group>"; };
 		7A9120342AF3F82F00B11E9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A96F9722AC8E033007B3BD8 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +109,7 @@
 				7A3665412AFC7B50006A1E56 /* ContentView.swift */,
 				7A067E9F2AEB5F5F00A5080C /* homepage-1.swift */,
 				7A96F9722AC8E033007B3BD8 /* Random.swift */,
-				7A90D5322ACF8E6C001F3CFF /* loginhomepage.swift */,
+				7A90D5322ACF8E6C001F3CFF /* loginpage-start.swift */,
 				7A8DE4142AEA0B5300AE2DC0 /* listview.swift */,
 				7A36653D2AFC7379006A1E56 /* MainView.swift */,
 				7A90D4F62ACF3ABC001F3CFF /* burgerdetails.swift */,
@@ -268,7 +268,7 @@
 				7A90D4F72ACF3ABC001F3CFF /* burgerdetails.swift in Sources */,
 				7A8DE4172AEA0B6800AE2DC0 /* foods.swift in Sources */,
 				7A96F9732AC8E033007B3BD8 /* Random.swift in Sources */,
-				7A90D5332ACF8E6C001F3CFF /* loginhomepage.swift in Sources */,
+				7A90D5332ACF8E6C001F3CFF /* loginpage-start.swift in Sources */,
 				7A65A4FF2AC629950083B82B /* loginpageApp.swift in Sources */,
 				7A8DE4152AEA0B5300AE2DC0 /* listview.swift in Sources */,
 				7A65A52A2AC62A300083B82B /* contentview.swift in Sources */,

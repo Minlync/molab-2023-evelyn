@@ -8,6 +8,7 @@ struct Random: View {
     
     var body: some View {
         VStack {
+            
             Spacer()
             Image(imageName)
                 .resizable()
@@ -28,6 +29,7 @@ struct Random: View {
             }
             
             Spacer()
+            
         }
         .navigationTitle("Random Food Generator")
     }

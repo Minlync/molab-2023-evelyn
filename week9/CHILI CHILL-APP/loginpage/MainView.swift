@@ -23,8 +23,10 @@ struct MainView: View {
                     Label("Order",systemImage: "square.and.pencil")
                 }
         }
+        .navigationBarBackButtonHidden(true)
                 .accentColor(.red)
         }
+    
     }
    
 
