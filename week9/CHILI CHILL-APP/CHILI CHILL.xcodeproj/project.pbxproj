@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A067E802AEB4FDF00A5080C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A067E7F2AEB4FDF00A5080C /* TabBar.swift */; };
 		7A067EA02AEB5F5F00A5080C /* homepage-1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A067E9F2AEB5F5F00A5080C /* homepage-1.swift */; };
+		7A36653E2AFC7379006A1E56 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36653D2AFC7379006A1E56 /* MainView.swift */; };
+		7A3665422AFC7B50006A1E56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3665412AFC7B50006A1E56 /* ContentView.swift */; };
 		7A65A4FF2AC629950083B82B /* loginpageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A65A4FE2AC629950083B82B /* loginpageApp.swift */; };
-		7A65A5012AC629950083B82B /* oldoldold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A65A5002AC629950083B82B /* oldoldold.swift */; };
 		7A65A5032AC629970083B82B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A65A5022AC629970083B82B /* Assets.xcassets */; };
 		7A65A5072AC629970083B82B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A65A5062AC629970083B82B /* Preview Assets.xcassets */; };
 		7A65A52A2AC62A300083B82B /* contentview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A65A5292AC62A300083B82B /* contentview.swift */; };
@@ -18,6 +18,7 @@
 		7A8DE4172AEA0B6800AE2DC0 /* foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8DE4162AEA0B6800AE2DC0 /* foods.swift */; };
 		7A90D4F72ACF3ABC001F3CFF /* burgerdetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A90D4F62ACF3ABC001F3CFF /* burgerdetails.swift */; };
 		7A90D5332ACF8E6C001F3CFF /* loginhomepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A90D5322ACF8E6C001F3CFF /* loginhomepage.swift */; };
+		7A9120352AF3F82F00B11E9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A9120342AF3F82F00B11E9A /* GoogleService-Info.plist */; };
 		7A96F9732AC8E033007B3BD8 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A96F9722AC8E033007B3BD8 /* Random.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7A067E7F2AEB4FDF00A5080C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		7A067E9F2AEB5F5F00A5080C /* homepage-1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "homepage-1.swift"; sourceTree = "<group>"; };
+		7A36653D2AFC7379006A1E56 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7A3665412AFC7B50006A1E56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A65A4FB2AC629950083B82B /* loginpage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginpage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A65A4FE2AC629950083B82B /* loginpageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginpageApp.swift; sourceTree = "<group>"; };
-		7A65A5002AC629950083B82B /* oldoldold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oldoldold.swift; sourceTree = "<group>"; };
 		7A65A5022AC629970083B82B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A65A5042AC629970083B82B /* loginpage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = loginpage.entitlements; sourceTree = "<group>"; };
 		7A65A5062AC629970083B82B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -54,6 +55,7 @@
 		7A8DE4162AEA0B6800AE2DC0 /* foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foods.swift; sourceTree = "<group>"; };
 		7A90D4F62ACF3ABC001F3CFF /* burgerdetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = burgerdetails.swift; sourceTree = "<group>"; };
 		7A90D5322ACF8E6C001F3CFF /* loginhomepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginhomepage.swift; sourceTree = "<group>"; };
+		7A9120342AF3F82F00B11E9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A96F9722AC8E033007B3BD8 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,13 +106,14 @@
 			isa = PBXGroup;
 			children = (
 				7A65A4FE2AC629950083B82B /* loginpageApp.swift */,
-				7A067E7F2AEB4FDF00A5080C /* TabBar.swift */,
+				7A3665412AFC7B50006A1E56 /* ContentView.swift */,
 				7A067E9F2AEB5F5F00A5080C /* homepage-1.swift */,
 				7A96F9722AC8E033007B3BD8 /* Random.swift */,
-				7A65A5002AC629950083B82B /* oldoldold.swift */,
 				7A90D5322ACF8E6C001F3CFF /* loginhomepage.swift */,
 				7A8DE4142AEA0B5300AE2DC0 /* listview.swift */,
+				7A36653D2AFC7379006A1E56 /* MainView.swift */,
 				7A90D4F62ACF3ABC001F3CFF /* burgerdetails.swift */,
+				7A9120342AF3F82F00B11E9A /* GoogleService-Info.plist */,
 				7A65A5022AC629970083B82B /* Assets.xcassets */,
 				7A65A5042AC629970083B82B /* loginpage.entitlements */,
 				7A8DE4162AEA0B6800AE2DC0 /* foods.swift */,
@@ -207,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7A65A4F62AC629950083B82B /* Build configuration list for PBXProject "loginpage" */;
+			buildConfigurationList = 7A65A4F62AC629950083B82B /* Build configuration list for PBXProject "CHILI CHILL" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -234,6 +237,7 @@
 			files = (
 				7A65A5072AC629970083B82B /* Preview Assets.xcassets in Resources */,
 				7A65A5032AC629970083B82B /* Assets.xcassets in Resources */,
+				7A9120352AF3F82F00B11E9A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,12 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A067E802AEB4FDF00A5080C /* TabBar.swift in Sources */,
+				7A3665422AFC7B50006A1E56 /* ContentView.swift in Sources */,
 				7A067EA02AEB5F5F00A5080C /* homepage-1.swift in Sources */,
+				7A36653E2AFC7379006A1E56 /* MainView.swift in Sources */,
 				7A90D4F72ACF3ABC001F3CFF /* burgerdetails.swift in Sources */,
 				7A8DE4172AEA0B6800AE2DC0 /* foods.swift in Sources */,
 				7A96F9732AC8E033007B3BD8 /* Random.swift in Sources */,
-				7A65A5012AC629950083B82B /* oldoldold.swift in Sources */,
 				7A90D5332ACF8E6C001F3CFF /* loginhomepage.swift in Sources */,
 				7A65A4FF2AC629950083B82B /* loginpageApp.swift in Sources */,
 				7A8DE4152AEA0B5300AE2DC0 /* listview.swift in Sources */,
@@ -424,7 +428,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"loginpage/Preview Content\"";
-				DEVELOPMENT_TEAM = 69JAKR3DAQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -442,7 +445,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = minglin.chilichill;
+				PRODUCT_BUNDLE_IDENTIFIER = loginpag.loginpage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -461,7 +464,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"loginpage/Preview Content\"";
-				DEVELOPMENT_TEAM = 69JAKR3DAQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -479,7 +481,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = minglin.chilichill;
+				PRODUCT_BUNDLE_IDENTIFIER = loginpag.loginpage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -578,7 +580,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7A65A4F62AC629950083B82B /* Build configuration list for PBXProject "loginpage" */ = {
+		7A65A4F62AC629950083B82B /* Build configuration list for PBXProject "CHILI CHILL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A65A51E2AC629970083B82B /* Debug */,
