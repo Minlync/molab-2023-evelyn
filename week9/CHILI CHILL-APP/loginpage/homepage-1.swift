@@ -1,5 +1,11 @@
 import SwiftUI
 
+struct MyItem {
+    var imageName :String;
+    var description:String ;
+}
+var myItems:[MyItem] = [MyItem(imageName:"image1", description: "Overloaded  Beef Burger")]
+
 struct Combined: View {
     let imageNames = ["image1", "image2", "image3"]
     let silider2 = ["Overloaded  Beef Burger", "6thSense  Chicken Nuggets", "nothing special  chicken wings"]

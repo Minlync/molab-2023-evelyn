@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+// menu[0] -- FOODS
+// menu[1] -- Snacks
+
+
 struct NewlistView: View {
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
 
@@ -23,11 +27,26 @@ struct NewlistView: View {
                     }
                 }
             }
-            .navigationDestination(for: MenuItem.self) { item in
-                ItemDetail(item: item)
-            }
-            .navigationTitle("Menu")
-            .listStyle(.grouped)
+//            List {
+//                ForEach(menu[0].items) { item in
+//                    NavigationLink(value: item) {
+//                        ItemRow(item: item)
+//                    }
+//                }
+//            }
+//            List {
+//                ForEach(menu[1].items) { item in
+//                    NavigationLink(value: item) {
+//                       ItemRow(item: item)
+//                    }
+//                }
+//            }
+//
+//            .navigationDestination(for: MenuItem.self) { item in
+//                ItemDetail(item: item)
+//            }
+//            .navigationTitle("Menu")
+//            .listStyle(.grouped)
         }
     }
 }
