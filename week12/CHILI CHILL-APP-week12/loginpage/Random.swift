@@ -1,67 +1,80 @@
 import SwiftUI
 
 struct Random: View {
-    @State private var generatedFood = ""
-    @State private var imageName = "surprise"
-//    let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
-//    let item: MenuItem
-    
-   let imageNames = ["imgfood1", "imgfood2", "imgfood3", "imgfood4", "imgfood5"]
-//   let imageNames = ["item.thumbnailImage"]
-    
+    @EnvironmentObject var order: Order
+        @State private var FoodName = ""
+        @State private var imageName = "surprise"
+        let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
+        @State var item: MenuItem
+        @State private var showingAlert = false
+    /*this is set for alert*/
+
+        let imageNames = ["item.randomImage"]
+        var FoodNames = ["item.name"]
+
     var body: some View {
         VStack {
             
             Spacer()
-//            Image(item.thumbnailImage)
-           Image(imageName)
+            Image(item.randomImage)
+            //           Image(imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 250, height: 250)
-            Text(generatedFood)
-                .font(.largeTitle)
+            Text(item.name)
+                .font(.title)
                 .padding()
             
             Button(action: generateRandomFood) {
                 Text("Next One")
                     .font(.headline)
-                    .frame(maxWidth: 300, minHeight: 10)
+                    .frame(width: 300, height: 20)
                     .padding()
                     .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
             
-//            Spacer()
+            //            Spacer()
             /*place hold*/
-            NavigationLink (destination:ContentView()){
-                Text("Place Order")
-                    .font(.headline)
-                    .frame(maxWidth:300,minHeight: 10)
-                    .padding()
-                    .background(Color.red)
-                    .foregroundStyle(.white)
-                    .cornerRadius(10)
-                    
+            Button("Order This") {
+                order.add(item: item)
+                showingAlert = true
+                
             }
+            .font(.headline) // Apply font to the Button
+            .frame(width: 300, height: 20) // Apply frame to the Button
+            .foregroundColor(.white) // Apply foreground color to the Button
+            .padding()
+            .background(Color.red) // Apply background color to the Button
+            .cornerRadius(10)
             Spacer()
         }
         .navigationTitle("Random Food Generator")
-    }
+                .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("Success"), message: Text("You have successfully added your food!"), dismissButton: .default(Text("OK")))
+                }
+            }
+        
+    
     
     func generateRandomFood() {
-        // Replace this with your logic to generate a random name
-        let randomNames = ["Speial Chicken", "Relax Best", "Weekend Choice", "On Fire", "Got Your Eyes"]
-        generatedFood = randomNames.randomElement() ?? "No Name"
         
+        FoodName = FoodNames.randomElement() ?? ""
         // Set the image name to a random element from the array
-        imageName = imageNames.randomElement() ?? ""
+        imageName = imageNames.randomElement() ?? "surprise"
+        // item:menu[0].items[Int.random(in: 0...3)]
+        item = menu[0].items[Int.random(in: 0...3)]
+        
     }
 }
-
-struct Random_Previews: PreviewProvider {
-    static var previews: some View {
-//        Random(item: MenuItem.example)
-        Random()
-    }
-}
+        
+        
+        struct Random_Previews: PreviewProvider {
+            static var previews: some View {
+                Random(item: MenuItem.example)
+                    .environmentObject(Order())
+                //        Random()
+            }
+        }
+    

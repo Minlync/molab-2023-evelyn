@@ -10,8 +10,8 @@ struct Combined: View {
     let imageNames = ["image1", "image2", "image3"]
     let silider2 = ["Overloaded  Beef Burger", "6thSense  Chicken Nuggets", "nothing special  chicken wings"]
     
-//    @State private var tabSelected: Tab = .house
-    
+//       @State private var tabSelected: Tab = .house
+//    
     var body: some View {
         ZStack {
             VStack {
@@ -24,7 +24,7 @@ struct Combined: View {
                 }
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
-                        ForEach(0..<imageNames.count) { index in
+                        ForEach(0..<imageNames.count,id: \.self) { index in
                             NavigationLink(destination: destinationForImage(at: index)) {
                                 Image(imageNames[index])
                                     .resizable()
@@ -36,14 +36,14 @@ struct Combined: View {
                 .padding(.top, -25)
                 .padding(20)
                 
-                VStack{
-                    NavigationLink (destination: Random ()){
-                        Image("random banner")
-                            .resizable()
-                            .frame(width: 390, height: 85)
-                    }
-                }
-                
+//                VStack{
+//                    NavigationLink (destination: Random (item: MenuItem())){
+//                        Image("random banner")
+//                            .resizable()
+//                            .frame(width: 390, height: 85)
+//                    }
+//                }
+//                
                 /* Second ScrollView Section */
                 VStack {
                     Text("SNACKS")
@@ -53,7 +53,7 @@ struct Combined: View {
                 }
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 5) {
-                        ForEach(0..<silider2.count) { index in
+                        ForEach(0..<silider2.count,id: \.self) { index in
                             VStack {
                                 Image(silider2[index])
                                     .resizable()
@@ -70,11 +70,11 @@ struct Combined: View {
                 .padding(20)
             }
             
-//            VStack {
-//                Spacer()
-//                CustomTabBar(selectedTab: $tabSelected)
-//                    .padding(EdgeInsets(top: 10, leading: 0, bottom: -30, trailing: 0))
-//            }
+            //            VStack {
+            //                Spacer()
+            //                CustomTabBar(selectedTab: $tabSelected)
+            //                    .padding(EdgeInsets(top: 10, leading: 0, bottom: -30, trailing: 0))
+            //            }
         }
         .navigationBarBackButtonHidden(true)
     }
@@ -91,7 +91,7 @@ struct Combined: View {
             case 2:
                 EmptyView()
             default:
-                 EmptyView()
+                EmptyView()
             }
         }
     }

@@ -19,7 +19,8 @@ struct ItemDetail: View {
     
     @EnvironmentObject var order: Order
     let item: MenuItem
-
+    @State private var showingAlert = false
+    
     var body: some View {
         VStack {
             ZStack(alignment: .bottomTrailing) {
@@ -31,9 +32,9 @@ struct ItemDetail: View {
                     .background(Color.white)
                     .font(.caption)
                     .foregroundColor(.white)
-//                    .offset(x: -5, y: -5)
+                //                    .offset(x: -5, y: -5)
             }
-
+            
             Text(item.description)
                 .padding()
             Form {
@@ -64,7 +65,7 @@ struct ItemDetail: View {
                         }
                     }
                 }
-               
+                
                 Section(header: Text("Select your sauce").foregroundColor(Color.blue)) {
                     HStack {
                         Image("ketchup")
@@ -77,28 +78,31 @@ struct ItemDetail: View {
                         }
                     }
                 }
-        
+                
                 
             } 
-
+            
             Button("Order This") {
                 order.add(item: item)
+                showingAlert = true
             }
-//            .buttonStyle(.borderedProminent）
-                .font(.title)
-                .frame(width: 300, height: 15)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.red)
-                .cornerRadius(10)
-
+            //            .buttonStyle(.borderedProminent）
+            .font(.title)
+            .frame(width: 300, height: 15)
+            .foregroundColor(.white)
+            .padding()
+            .background(Color.red)
+            .cornerRadius(10)
+            
             Spacer()
         }
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Success"), message: Text("You have successfully added your food!"), dismissButton: .default(Text("OK")))
+        }
     }
 }
-
 struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {

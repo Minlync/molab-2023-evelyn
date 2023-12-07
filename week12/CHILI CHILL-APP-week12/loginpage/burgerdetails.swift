@@ -1,7 +1,7 @@
 import SwiftUI
 import AVFoundation
 
-struct Hamburger: View {
+struct Hamburger1: View {
   @State private var audioPlayer: AVAudioPlayer?
    
     let side = ["Avocado Salad", "Coleslaw", "Smashed Potatoes"]
@@ -95,7 +95,7 @@ struct Hamburger: View {
 
 struct Hamburger_Previews: PreviewProvider {
     static var previews: some View {
-        Hamburger()
+        Hamburger1()
     }
 }
 

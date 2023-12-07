@@ -1,12 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "chicken-nuggets-thumb.png",
+      "filename" : "spicy-wings-random.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "chicken-nuggets-thumb-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

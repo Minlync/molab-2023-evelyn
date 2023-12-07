@@ -24,7 +24,9 @@ struct MenuItem: Codable, Hashable, Identifiable {
     var mainImage: String {
         name.replacingOccurrences(of: " ", with: "-").lowercased()
     }
-
+    var randomImage: String {
+        "\(mainImage)-random"
+    }
     var thumbnailImage: String {
         "\(mainImage)-thumb"
     }
@@ -35,6 +37,6 @@ struct MenuItem: Codable, Hashable, Identifiable {
         "\(mainImage)-home"
     }
     #if DEBUG
-    static let example = MenuItem(id: UUID(), name: "Maple French Toast", price: 6, restrictions: ["G", "V"], description: "Sweet, fluffy, and served piping hot, our French toast is flown in fresh every day from Maple City, Canada, which is where all maple syrup in the world comes from. And if you believe that, we have some land to sell you…")
+    static let example = MenuItem(id: UUID(), name: "❤️❤️❤️❤️", price: 6, restrictions: ["G", "V"], description: "Sweet, fluffy, and served piping hot, our French toast is flown in fresh every day from Maple City, Canada, which is where all maple syrup in the world comes from. And if you believe that, we have some land to sell you…")
     #endif
 }

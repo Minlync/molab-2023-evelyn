@@ -39,7 +39,7 @@ struct Newhomepage: View {
                         .padding(.top, -35)
                         .padding(30)
                         VStack{
-                            NavigationLink (destination: Random ()){
+                            NavigationLink (destination: Random (item:menu[0].items[Int.random(in: 0...3)])){
                                 Image("random banner")
                                     .resizable()
                                     .frame(width: 390, height: 85)

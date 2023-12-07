@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CheckoutView: View {
+    @State private var Name: String = ""
+    @State private var Phone: String = ""
+    @State private var Address: String = ""
     @EnvironmentObject var order: Order
     @State private var paymentType = "Cash"
     @State private var addLoyaltyDetails = false
@@ -15,7 +18,7 @@ struct CheckoutView: View {
     @State private var tipAmount = 15
     @State private var showingPaymentAlert = false
 
-    let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
+    let paymentTypes = ["Cash", "Credit Card", "Points"]
     let tipAmounts = [10, 15, 20, 25, 0]
 
     var totalPrice: String {
@@ -26,17 +29,22 @@ struct CheckoutView: View {
 
     var body: some View {
         Form {
-            Section {
+            Section("Contact Information") {
+                TextField("Name", text: $Name)
+                TextField("Phone", text: $Phone)
+                TextField("Address", text: $Address)
+            }
+            Section("payment"){
                 Picker("How do you want to pay?", selection: $paymentType) {
                     ForEach(paymentTypes, id: \.self) {
                         Text($0)
                     }
                 }
 
-                Toggle("Add iDine loyalty card", isOn: $addLoyaltyDetails.animation())
+                Toggle("Add CHILL card", isOn: $addLoyaltyDetails.animation())
 
                 if addLoyaltyDetails {
-                    TextField("Enter your iDine ID", text: $loyaltyNumber)
+                    TextField("Enter your CHILL ID", text: $loyaltyNumber)
                 }
             }
 
